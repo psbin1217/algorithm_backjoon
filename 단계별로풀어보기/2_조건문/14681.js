@@ -5,9 +5,14 @@
 점 (x, y)의 사분면 번호(1, 2, 3, 4 중 하나)를 출력한다.
 */
 var input = require('fs').readFileSync('baekjoon/example/14681.txt').toString().split('\n');
-var a = parseInt(input[0]);
-var b = parseInt(input[1]);
-if () {
-
+var x = parseInt(input[0]);
+var y = parseInt(input[1]);
+if (x > 0 && y > 0) {
+    console.log(1);
+} else if (x < 0 && y > 0) {
+    console.log(2);
+} else if (x < 0 && y < 0) {
+    console.log(3);
+} else if (x > 0 && y < 0) {
+    console.log(4);
 }
-console.log(a + b);
